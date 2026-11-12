@@ -5,28 +5,28 @@ const products = [
     title: 'Сувенир «Байкальская нерпа»',
     desc: 'Керамическая статуэтка нерпы ручной работы',
     price: 1200,
-    img: 'images/baykal-1.jpg'
+    img: 'baykal-1.jpg'
   },
   {
     id: 2,
     title: 'Кулон из байкальского камня',
     desc: 'Натуральный камень, серебряная фурнитура',
     price: 2400,
-    img: 'baykal-2.jpg.jpg'
+    img: 'baykal-2.jpg'
   },
   {
     id: 3,
     title: 'Разделочная доска «Байкал»',
     desc: 'Дерево кедра с гравировкой',
     price: 1800,
-    img: 'images/baykal-3.jpg'
+    img: 'baykal-3.jpg'
   },
   {
     id: 4,
     title: 'Магнит «Озеро Байкал»',
     desc: 'Набор из 3 магнитов с видами озера',
     price: 450,
-    img: 'images/baykal-4.jpg'
+    img: 'baykal-4.jpg'
   }
 ];
 
