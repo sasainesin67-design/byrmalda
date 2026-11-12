@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background: #f0f6fa;
+  color: #1a2b3a;
+}
+
+/* Шапка */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background: #0b3d5c;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.logo span {
+  color: #6fc3e8;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav a {
+  color: #dceef7;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.nav a:hover {
+  color: #6fc3e8;
+}
+
+.cart-btn {
+  background: #6fc3e8;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.cart-btn:hover {
+  background: #8fd4f2;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #0b3d5c, #1d7aa8);
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* Каталог */
+.catalog {
+  padding: 48px 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.catalog h2,
+.about h2,
+.contacts h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 28px;
+  color: #0b3d5c;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(11, 61, 92, 0.12);
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.card-title {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.card-desc {
+  font-size: 13px;
+  color: #5a7184;
+  flex: 1;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0b3d5c;
+}
+
+.add-btn {
+  background: #0b3d5c;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.add-btn:hover {
+  background: #1d7aa8;
+}
+
+/* About / Contacts */
+.about,
+.contacts {
+  padding: 48px 32px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.contacts p {
+  margin: 6px 0;
+}
+
+/* Footer */
+.footer {
+  background: #0b3d5c;
+  color: #b9d8e8;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+/* Корзина */
+.cart-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 200;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.cart-modal.open {
+  display: flex;
+}
+
+.cart-content {
+  background: #fff;
+  border-radius: 14px;
+  padding: 24px;
+  width: 100%;
+  max-width: 440px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.cart-content h3 {
+  margin-bottom: 16px;
+  color: #0b3d5c;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #e3edf3;
+  font-size: 14px;
+}
+
+.cart-total {
+  margin: 16px 0;
+  font-size: 17px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: #0b3d5c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.btn:hover {
+  background: #1d7aa8;
+}
+
+.btn-close {
+  background: #e3edf3;
+  color: #0b3d5c;
+}
+
+.btn-close:hover {
+  background: #d0e2ec;
+}
