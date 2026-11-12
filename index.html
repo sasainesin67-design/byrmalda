@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Байкал Стори — магазин</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">🌊 Байкал <span>Стори</span></div>
+    <nav class="nav">
+      <a href="#catalog">Каталог</a>
+      <a href="#about">О нас</a>
+      <a href="#contacts">Контакты</a>
+      <button id="cart-btn" class="cart-btn">🛒 Корзина <span id="cart-count">0</span></button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Сувениры с Байкала</h1>
+    <p>Уникальные товары ручной работы прямо с берегов самого глубокого озера мира</p>
+  </section>
+
+  <section id="catalog" class="catalog">
+    <h2>Каталог</h2>
+    <div class="grid" id="product-grid"></div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>О нас</h2>
+    <p>«Байкал Стори» — это магазин, где каждый сувенир хранит историю. Мы работаем с местными мастерами, чтобы привезти вам частичку Байкала: от деревянных изделий до украшений из байкальского камня.</p>
+  </section>
+
+  <section id="contacts" class="contacts">
+    <h2>Контакты</h2>
+    <p>г. Иркутск, ул. Байкальская, 1</p>
+    <p>Телефон: +7 (000) 000-00-00</p>
+    <p>Email: info@baykal-story.ru</p>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Байкал Стори. Все права защищены.</p>
+  </footer>
+
+  <div class="cart-modal" id="cart-modal">
+    <div class="cart-content">
+      <h3>Корзина</h3>
+      <div id="cart-items"></div>
+      <p class="cart-total">Итого: <span id="cart-total">0</span> ₽</p>
+      <button class="btn" id="checkout-btn">Оформить заказ</button>
+      <button class="btn btn-close" id="close-cart">Закрыть</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
